@@ -1,0 +1,62 @@
+
+.container .container-body .content .list-body {
+  /* background-color: yellow; */
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+}
+
+.container .container-body .content .list-body .title {
+  width: 100%;
+  height: 90px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 2.5rem;
+  background-color: #F10063;
+  letter-spacing: 1px;
+  background-color: #7d00c5;
+}
+
+.container .container-body .content .list-body .tasks {
+  width: 100%;
+  height: 100%;
+  background-color: #e2e2e2;
+  color: #000;
+  padding: 50px 100px;
+}
+
+.container .container-body .content .list-body .tasks ul {
+  /* background-color: blue; */
+  height: 200px;
+  overflow: auto;
+}
+
+.container .container-body .content .list-body .tasks ul li {
+  font-size: 1.3rem;
+  list-style-type: decimal;
+  border-bottom: 1px solid #333;
+  padding: 5px 0;
+  list-style-position: inside;
+  font-weight: 600;
+  /* background-color: red; */
+
+}
+
+
+.container .container-body .content .list-body .btn-delete {
+  /* height: 50px; */
+  position: absolute  ;
+  right: 50px;
+  font-size: 1rem;
+  padding: 5px 20px;
+  cursor: pointer;
+  bottom: 30px;
+  border-radius: 5px;
+  background-color: transparent;
+  background-color: #FC4136;
+  color: #fff;
+  font-weight: 700;
+  border: none;
+}

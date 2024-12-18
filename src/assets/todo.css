@@ -1,0 +1,82 @@
+.main header .header-content .todo-flex {
+  display: flex;
+  justify-content: center;
+  align-items: start;
+  width: 280px;
+  height: 60px;
+}
+
+.main header .header-content .todo {
+  pointer-events: none;
+  width: 280px;
+  height: 60px;
+  border-radius: 50px;
+  /* background-color: brown; */
+  border: 2px solid #b0b0b0;
+  overflow: hidden;
+  padding-left: 20px;
+  background-image: url("../../public/img/tanjero.jpeg");
+  background-size: cover;
+  background-position: center center;
+  position: relative;
+  cursor: pointer;
+  transition: border .3s;
+  
+}
+
+.main header .header-content .todo::before {
+  content: '';
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  left: 0;
+  top: 0;
+  background-color: rgba(0, 0, 0, 0.422);
+  background-image: linear-gradient(transparent, #000);
+}
+
+.main header .header-content .todo .todo-content {
+  /* background-color: burlywood; */
+  height: 100%;
+  display: flex;
+  justify-content: start;
+  align-items: center;
+  width: 100%;
+  z-index: 100;
+  position: relative;
+}
+
+.main header .header-content .todo .todo-content .title {
+  /* background-color: green; */
+  text-transform: capitalize;
+  border-bottom: 1px solid #b0b0b0;
+  font-size: 1.5rem;
+  font-weight: 600;
+  color: #b0b0b0;
+  transition: border .3s, color .3s;
+}
+
+
+.main header .header-content .todo:hover .todo-content .title {
+  border-bottom: 1px solid #ededed;
+  color: #fff;
+}
+
+
+.main header .header-content .todo .todo-content .createdAt {
+  position: absolute;
+  right: 15px;
+  font-size: 13px;
+  color: #b0b0b0;
+  bottom: 5px;
+  transition: color .3s;
+}
+
+.main header .header-content .todo:hover .todo-content .createdAt {
+  color: #fff;
+}
+
+.main header .header-content .todo:hover {
+  border-color: #ededed;
+  box-shadow: 0 0 10px #ededed;
+}
